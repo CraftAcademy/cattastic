@@ -1,11 +1,14 @@
 = render 'partials/navbar'
-%h1 Welcome to Cattastic!
+%h1.marquee Welcome to Cattastic!
 
 %section.container
-    %h1 The competitors
     %div.grid-container
         - @cats.each do |cat|
             .div.grid-content
                 = image_tag cat['url']
-
+    %h1.fight Fight!!!
+    %div.gif-container
+        %img.gif{:src => "https://media.giphy.com/media/l41YcERtDfRm3plGo/giphy.gif"}/
+        %img.gif{:src => "https://media.giphy.com/media/adikIKGu30u6A/giphy.gif"}/
+        %img.gif{:src => "https://media.giphy.com/media/3ohhwDqWPfgSfBY1Ne/giphy.gif"}/
 = render 'partials/categories'
