@@ -2,10 +2,9 @@
 %h1.marquee Welcome to Cattastic!
 
 %section.container
-    %h1 The competitors...
     %div.grid-container
         - @cats.each do |cat|
             .div.grid-content
                 = image_tag cat['url']
-
+    %h1.fight Fight!!!
 = render 'partials/categories'

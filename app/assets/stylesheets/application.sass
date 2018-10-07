@@ -2,6 +2,16 @@
 
 h1
     text-shadow: 0 0 0.2em rgba(20, 255, 20, 0.7), 0 0 0.2em rgba(20, 255, 20, 0.7), 0 0 0.2em rgba(20, 255, 20, 0.7)
+    margin-left: 150px
+    margin-right: 150px
+    text-align: center
+    background-color: white
+    font-size: xx-large
+    font-family: Arial, Helvetica, sans-serif
+
+.fight
+    border: solid #4AFD00
+    padding: 5px
 
 img 
     width: 350px
@@ -12,15 +22,24 @@ img
     grid-template-columns: 1fr 1fr
     grid-gap: 30px
     justify-content: space-around
+    margin-top: 75px
+    margin-left: 150px
+    margin-right: 150px
+    background-color: white
+    border: solid #4AFD00
 
 .grid-content
     width: 350px
     height: 350px
-    border: solid black
-    margin: auto
+    border: solid #4AFD00
+    margin-left: auto
+    margin-right: auto
+    margin-top: 100px
+    margin-bottom: 100px
 
 body
     background-image: url(paisley.webp)
+    margin: 0
 
 .title
     display: grid
@@ -30,12 +49,15 @@ body
     text-align: center
 
 .marquee
-    width: 95%
-    margin: 0 auto
+    width: 100%
+    margin: 0
     overflow: hidden
     white-space: nowrap
     box-sizing: border-box
     animation: marquee 20s linear infinite
+    background-color: white
+    padding-top: 5px
+    padding-bottom: 5px
 
 @keyframes marquee
     0%
